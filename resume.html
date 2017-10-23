@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Interactive Resume Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
+  <script src="https://use.fontawesome.com/618450c358.js"></script>
+  
+  <!-- MDL For footer -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!--	Nav bar Header	-->
+	<section>
+	<nav class="navbar navbar-default" id="header">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+		  </button>
+		  <a class="navbar-brand" href="index.html">HOME</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="portfolio.html" class="toPortfolio">PORTFOLIO</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	</section>
+	
+	<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<div class="col-xs-12">
+					<h1> Interactive Resume </h1><hr>
+					<p class="author">
+					Udacity's Front-End Nanodegree <span class="projectDate">August 2017</span>
+					</p>
+				</div>
+				<div class="col-xs-12 introPara">
+					<p>
+					Resume data in four javaScript objects are stored.</br>
+					The whole page is generated dynamically by JavaScript and JQuery according to the stored data.
+					</p>
+					<a href="https://masihariany.github.io/frontend-nanodegree-resume/" target="_blank">Online Demo</a></br>
+					<a href="https://github.com/MasihAriany/frontend-nanodegree-resume" target="_blank">Github Repo</a>
+				</div>
+			</div>
+			<div class="col-xs-9 col-sm-6 col-md-6 introPic" style="margin-top:20px;">
+				<img src="img/resume/ir1.jpg" alt="screen shot of Neighborhood Map page" class="img-responsive">
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid bg-grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<h3> Purpose of the project </h3>
+					<p>
+					 An interactive resume application that reads my resume content from a JSON file and 
+					 dynamically displays that content within a provided template.</br>
+					 It was implemented in a way to use objects, functions, conditionals, and control structures
+					 to compose the content that will display on the resume.
+					<p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-11 col-sm-12 col-md-12">
+					<h3> Sections </h3>
+					<ul class="projectFeatures">
+						<li>Work Experiences</li>
+						<li>Education</li>
+						<li>Projects</li>
+						<li>Google Map API of the places that I've worked and Study</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row featureScreenShots">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="img/resume/ir1.jpg" class="img-responsive" style="margin-top:5px;">
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="img/resume/ir2.jpg" class="img-responsive" style="margin-top:5px;">
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="img/resume/ir3.jpg" class="img-responsive" style="margin-top:5px;">
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<footer class="mdl-mini-footer" style="margin-top:20px;">
+		<div class="mdl-mini-footer__left-section">
+			<div class="mdl-logo"><span class="fa fa-copyright"></span> 2017 Masih Ariani</div>
+		</div>
+		<div class="mdl-mini-footer__right-section">
+		<ul class="mdl-mini-footer__link-list">
+			<li><a href="https://github.com/MasihAriany" target="_blank" class="fa fa-github fa-lg"></a></li>
+			<li><a href="https://www.linkedin.com/in/masihariani" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+			<li><a href="https://www.facebook.com/masih.ariani" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+			<li><a href="https://www.instagram.com/maashiach/" target="_blank" class="fa fa-instagram fa-lg"></a></li>
+		</ul>
+	  </div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Neighborhood Map Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
+  <script src="https://use.fontawesome.com/618450c358.js"></script>
+  
+  <!-- MDL For footer -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<!--	Nav bar Header	-->
+	<section>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span> 
+		  </button>
+		  <a class="navbar-brand" href="index.html">HOME</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="portfolio.html" class="toPortfolio">PORTFOLIO</a></li>
+			<li><a href="gallery.html">GALLERY</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+	</section>
+	
+	<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-7">
+				<div class="col-xs-12">
+					<h1> Neighborhood Map </h1><hr>
+					<p class="author">
+					Udacity's Front-End Nanodegree <span class="projectDate">October 2017</span>
+					</p>
+				</div>
+				<div class="col-xs-10 introPara">
+					<p>
+					A single page application featuring a map of Manhattan neighborhood was developed. 
+					additional functionality to this map including highlighted locations, third-party data 
+					about those locations and various ways to browse the content was also added.
+					</p>
+					<a href="https://masihariany.github.io/NeighborhoodMap/" target="_blank">Online Demo</a></br>
+					<a href="https://github.com/MasihAriany/NeighborhoodMap" target="_blank">Github Repo</a>
+				</div>
+			</div>
+			<div class="col-xs-9 col-sm-6 col-md-5 introPic">
+				<img id="firstImage" src="img/nm/nm11.jpg" alt="screen shot of Neighborhood Map page" class="img-responsive" style="margin-top:20px">
+			</div>
+		</div>
+		<div class="projectDescription">
+			<div class="row">
+				<div class="col-xs-11 col-sm-12 col-md-12">
+					<img class="img-responsive" src="img/nm/streetView1.jpg" alt="full screen snap shot">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-11 col-sm-12 col-md-12">
+					<h3> Purpose of the project </h3>
+					<p>
+					Designing how patterns assist in developing a manageable codebase. 
+					exploring and experiencing how frameworks can decrease the time required developing an application. 
+					learning more how to implement third-party APIs that provide valuable data sets that can improve the quality of the application.
+					<p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-sm-12 col-md-12">
+					<h3> Project features </h3>
+					<ul class="projectFeatures">
+						<li>Clicking the name of the place in the SlideBar, will open Google Street View of that place, below the map.</li>
+						<li>List items and Markers on the map, can be filtered in the search bar.</li>
+						<li>for data binding between View and Model, <a href="http://knockoutjs.com/" target="_blank">KnockoutJS</a> library was used.</li>
+						<li>For other interaction, Vanilla JS and mostly JQuery were used.</li>
+						<li>Page is fully Responsive and for CSS styling, Bootstrap library was used.</li>
+						<li>Clicking on the markers on the map, will show the name of the location while the icon is bouncing.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row screenShots">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="img/nm/nm22.jpg" class="img-responsive ss2" style="margin-top:5px">
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="img/nm/nm33.jpg" class="img-responsive ss3" style="margin-top:5px">
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<img src="img/nm/nm44.jpg" class="img-responsive ss1" style="margin-top:5px"> 
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+	<footer class="mdl-mini-footer" style="margin-top:20px;">
+		<div class="mdl-mini-footer__left-section">
+			<div class="mdl-logo"><span class="fa fa-copyright"></span> 2017 Masih Ariani</div>
+		</div>
+		<div class="mdl-mini-footer__right-section">
+		<ul class="mdl-mini-footer__link-list">
+			<li><a href="https://github.com/MasihAriany" target="_blank" class="fa fa-github fa-lg"></a></li>
+			<li><a href="https://www.linkedin.com/in/masihariani" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+			<li><a href="https://www.facebook.com/masih.ariani" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+			<li><a href="https://www.instagram.com/maashiach/" target="_blank" class="fa fa-instagram fa-lg"></a></li>
+		</ul>
+	  </div>
+	</footer>
+</body>
+</html>

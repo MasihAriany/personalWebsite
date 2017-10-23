@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	
+	<!-- MDL For footer -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
+	<!-- Indie FLower Font is for personal part -->
+	<!-- font-family: 'Indie Flower', cursive; -->
+	<link rel="stylesheet" href="css/style.css">
+    <!-- CSS CDNs and locals-->
+	
+	<!-- Font-Awesome, AngularJS CDN -->
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/618450c358.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+	<nav class="navbar navbar-default" id="header">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="iconBar" style="color:white;">☰</span> 
+				</button>
+				<a class="navbar-brand" href="index.html">Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a ng-click="toPro()" href="#">ABOUT</a></li>
+				<li><a href="portfolio.html" class="toPortfolio">PORTFOLIO</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			  </ul>
+			</div>
+		</div>
+	</nav>
+	
+	<section class="" ng-show="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1 col-md-2"></div>
+				<div class="col-xs-10 col-md-8">
+					<img src="img/me2.jpg" class="img-responsive meSelf" alt="picture of me"></img>
+				</div>
+				<div class="col-xs-1 col-md-2"></div>
+			</div>
+		</div>
+		<div class="container-fluid bg-grey text-center">	
+			<div class="row">
+				<div class="col-xs-6">
+					<h3 class="text-center"> Right Hemisphere  </h3>
+					<p>
+						Art plays a significant role in my life</br>
+						For me, it is included in Photography, Playing Music, and Desiging.
+					</p>
+				</div>
+				<div class="col-xs-6">
+					<h3 class="text-center"> Left Hemisphere  </h3>
+					<p>
+						Front-End developer. My main goal is to deliver neat, optimized code
+					</p>
+				</div>
+			</div>
+			<div class="row hemispheres">
+				<div class="col-xs-6">
+					<h4> Go Left to see more Right </h4>
+					<a href="#header" class="btn btn-default" ng-click="toAbout()">
+						<span class="glyphicon glyphicon-chevron-left"></span> Left
+					</a>
+				</div>
+				<div class="col-xs-6">
+					<h4> Go Right to see more Left  </h4>
+					<a href="#header" class="btn btn-default" ng-click="toPro()">
+						Right <span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	<section ng-show="pro" id="pro">
+		<div class="container" id="myPage2">
+				<div class="row intro">
+					<div class="col-xs-12 col-sm-6">
+						<h1>Me, Professionally</h1> 
+						<h4> A Front-End Developer. A Master's student in Computer Science.</h4>
+						<p class="">
+							I enjoy designing and like to make ideas feasible.</br>
+							When started doing web developing in 2015, I realized that I don't get tired when working in this field.</br>
+							That's because it is a combination of Design and Programing.</br>
+							And because it is when I can be creative and make ideas feasible.
+						</p>
+						<p class="readMorePara">
+							After taking Udaciy's Nanodegree courses which is co-producted by Google, Now I have the required foundational base to develop web
+							projects in a professional manner.</br>
+							More information about this program: <i><a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001#" target="_blank">
+							Udacity Front-End Nanodegree</a></i>
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<img class="twoSide img-responsive" src="meLeft.jpg" alt="portrait of me"></img>
+					</div>
+				</div>
+		</div>
+		<div class="bg-grey container-fluid text-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-6">
+						<h2>Related Skills</h2>
+						<ul class="skillsList">
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>JavaScript</li>
+							<li>JQuery</li>
+							<li>AngularJS</li>
+							<li>KnockoutJS</li>
+							<li>Bootstrap 3</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 col-sm-4 sl">
+							<p> </br>Projects I've done:
+							<a style="margin-left:5px;"class="btn btn-default" href="portfolio.html">See Portfolio</a>
+						</div>
+						<div class="col-xs-6 col-sm-4 sl">
+							<p> </br>There are ways to contact me:
+							<a style="margin-left:5px;"class="btn btn-default" href="portfolio.html">Contact me</a>						
+							</p>
+						</div>
+						<div class="col-xs-6 col-sm-4 sl">
+							<p> </br>Like to know me more ?
+							<a style="margin-left:5px;"class="btn btn-default" ng-click="toAbout()"href="#">About myself</a>						
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section ng-show="about" id="about">
+		<div class="container">
+			<div class="row intro">
+				<div class="col-xs-12 col-sm-6">
+					<img class="img-responsive" src="meRight.jpg" alt="portrait of me"></img>
+				</div>
+				<div class="col-xs-12 col-sm-6 aboutIntro">
+						<h1 class="text-center">Me, Personally</h1> 
+						<p class="text-center">
+						Photography and Music, are things I pursue in Art </br>
+						Peace, is what I want for the world.</br>
+						Currenlty, living in Freiburg, Germany.
+						</p>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid bg-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 text-center">
+						<h4> Music </h4>
+						<p>
+							I play two kinds of traditional Iranian musical instruments.
+							<a href="https://en.wikipedia.org/wiki/Tonbak" target="_blank"> </br>Tonbak ( Persian: تنبک )</a>
+							, <a href="https://en.wikipedia.org/wiki/Udu" target="_blank"> Udu ( Persian: کوزه ) </a>
+						</p>
+						<img class="img-responsive aboutImg" src="img/about/play.jpg" alt="me playing udu in a play we had some years ago."></img>
+					</div>
+					<div class="col-xs-12 col-sm-6 text-center">	
+						<h4> Photography </h4>
+						<p>
+							Started doing Photography in 2011. Learned the theory of it by Internet.
+							I'd like to do some documentry when it is possible.</br>
+							<a class="btn btn-default" href="gallery.html" target="_blank">See Photo Gallery</a>
+						</p>	
+						<img class="img-responsive aboutImg" src="img/about/foto.jpg" alt="Photo of two portraits that I have taken"></img>
+					</div>
+				</div>
+				<div class="row">
+				<hr>
+					<div class="col-xs-12 col-sm-6">
+						<p>
+							<strong>Usually:</strong></br>
+							Each day: Drink 2-3 cups of coffee, ride my bike and read a little.</br>
+							Each week: Eat 3 Pizzas, Reply to unread messages here and there, watch TV-shows.</br>
+							And in a way, try to make the week different than previous one.</br>
+						</p>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+					<p>
+							<strong>sometimes:</strong></br>
+							Travel and try to get to know more people and their stories.</br>
+							make Persian food.</br>
+							Play music with my friends</br>
+							Draw something.</br>
+							Do some photography.</br>
+							and..
+						</p>
+					</div>
+				</div>
+				<div class="row">
+				<hr>
+					<div class="col-xs-12">
+						<p>
+							If you would like to get in touch with me, I'd be happy to have a message from you.
+							<a style="margin-left: 5px;"href="contact.html" class="btn btn-default"> Contact me </a></br></br>
+							And if you happen to be in Freiburg, let me know and maybe we could meet. It's a very beautiful city.</br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- my footer 
+	<footer class="">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1"></div>
+			<div class="col-xs-5 col-md-5">
+				<p id="copyright"><span class="fa fa-copyright"></span> 2017 Masih Ariani </p>
+			</div>
+
+			<div class="col-xs-4 col-md-3">
+				<nav id="nav-footer">
+					<ul>
+					<li><a href="https://github.com/MasihAriany" target="_blank" class="fa fa-github fa-lg"></a></li>
+					<li><a href="https://www.linkedin.com/in/masihariani" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+					<li><a href="https://www.facebook.com/masih.ariani" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+					<li><a href="https://www.instagram.com/maashiach/" target="_blank" class="fa fa-instagram fa-lg"></a></li>
+					</ul>
+				</nav>
+			</div>
+			</div>
+		</div>
+	</footer>
+	-->
+	<footer class="mdl-mini-footer">
+		<div class="mdl-mini-footer__left-section">
+			<div class="mdl-logo"><span class="fa fa-copyright"></span> 2017 Masih Ariani</div>
+		</div>
+		<div class="mdl-mini-footer__right-section">
+		<ul class="mdl-mini-footer__link-list">
+			<li><a href="https://github.com/MasihAriany" target="_blank" class="fa fa-github fa-lg"></a></li>
+			<li><a href="https://www.linkedin.com/in/masihariani" target="_blank" class="fa fa-linkedin fa-lg"></a></li>
+			<li><a href="https://www.facebook.com/masih.ariani" target="_blank" class="fa fa-facebook fa-lg"></a></li>
+			<li><a href="https://www.instagram.com/maashiach/" target="_blank" class="fa fa-instagram fa-lg"></a></li>
+		</ul>
+	  </div>
+	</footer>
+
+</body>
+</html>
